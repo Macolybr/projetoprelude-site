@@ -224,211 +224,178 @@ const regras = {
             texto: "Aquáticos/semiaquáticos, incluindo Deinocheirus e Lurdusaurus podem impedir que outros dinossauros busquem refúgio em rios/lagos no intuito de retirar o intruso de seu território.",
             detalhes: [
                 "Aquáticos/semiaquáticos que iniciarem o combate no intuito de proteger o seu território (rios/lagos) devem ameaçar 2x.",
-                "Caso o dinossauro que buscou refúgio, se negue a sair do rio/lago os aquáticos/semiaquáticos poderão iniciar ou intrometer-se no combate, para retirar o intruso de seu território. É permitido se defender do semiaquático."
+                "Caso o dinossauro que buscou refúgio, se negue a sair do rio/lago os aquáticos/semiaquáticos poderão iniciar ou interferir no combate.",
+                "Caso o dinossauro que buscou refúgio, saia do rio/lago, os aquáticos/semiaquáticos não poderão persegui-lo para fora da água."
             ]
         },
         {
             numero: "4",
-            texto: "Quando uma carcaça estiver completamente embaixo d'água e os donos da carcaça forem aquáticos ou semiaquáticos as regras equivalem a:",
+            texto: "Carcaças embaixo d'água são consideradas território de aquáticos/semiaquáticos, mesmo que a carcaça seja de um dinossauro terrestre.",
             detalhes: [
-                "Em lagos pequenos (Cratera, poças, lago do pico selvagem, hotsprings): A área da carcaça se torna a área do lago todo, podendo expulsar qualquer um que se aproxime das margens, caso entre na água ou tente beber água.",
-                "Em lagos médios ou grandes, mares e rios: A área da carcaça mantém a mesma, podendo expulsar qualquer um que se aproxime das margens, entre na água, mas não pode impedir os dinossauros de beber água.",
-                "Combates nesses casos, devem começar com 2x ameaças e parar uma vez que o intruso saia da região.",
-                "Caso a carcaça esteja submersa, as ameaças devem ser feitas com a cabeça do dinossauro fora da água e visível para os outros players."
+                "Caso a carcaça esteja na margem, o território é de quem a matou."
             ]
         },
         {
             numero: "5",
-            texto: "Semi-aquaticos e aquáticos SÃO obrigados a disputar o território de lagos pequenos ou um dos grupos deve abandonar o território.",
-            detalhes: []
-        },
-        {
-            numero: "6",
-            texto: "É permitido disputar territórios de águas, caso a fonte de água esteja abaixo de 30%.",
+            texto: "Disputas por território devem ser iniciadas com 2 ameaças.",
             detalhes: [
-                "Para a disputa é necessário ameaçar 2x com o grito de ameaça e aguardar a resposta do outro player;",
-                "Para o outro player aceitar a disputa, ameaçando 2x novamente ou desistir, virando as costas e saindo da região. O combate se encerra com drop de carcaça. Em casos de desistência ou perda, o time perdedor não poderá retornar na fonte de água, no prazo de 15 minutos."
+                "Caso o dono do território não responda ou se negue a sair, o combate poderá ser iniciado.",
+                "Caso o dono do território saia, o combate não poderá ser iniciado e o território passa a ser do novo dono."
             ]
         }
     ],
     "regras-grupo": [
         {
             numero: "1",
-            texto: "Todos os players que estiverem jogando juntos como herbívoros ou carnívoros devem ficar obrigatoriamente no grupo formado dentro do jogo por meio de convite.",
-            detalhes: []
+            texto: "Herbívoros podem formar grupo com a mesma espécie ou membros de manadas mistas permitidas.",
+            detalhes: [
+                "Manadas mistas permitidas: Consulte o canal de perfis-e-limites no Discord."
+            ]
         },
         {
             numero: "2",
-            texto: "Carnívoros e Herbívoros podem mandar grupo para mesma espécie ou para membros de mixpack, sempre levando em conta os limites de grupo do canal [📚│perfis-e-limites].",
+            texto: "Carnívoros podem formar grupo com a mesma espécie ou membros de mixpack permitidos.",
             detalhes: [
-                "Não é permitido mixpack entre carnívoros iguais, porém de mods diferentes (Rex PT + Rex Alderon).",
-                "Não interfira em combates para tentar defender membros que não são do seu grupo mesmo sendo da mesma espécie."
+                "Mixpacks permitidos: Consulte o canal de perfis-e-limites no Discord."
             ]
         },
         {
             numero: "3",
-            texto: "Herbívoros podem andar juntos em manadas mistas, mas a participação em combate contra carnívoros será somente entre os grupos familiares. Herbívoros curinga podem defender membros de seu grupo que não fazem parte de sua família, entretanto caso um herbívoro curinga seja atacado ele poderá ser defendido apenas por uma das famílias de sua manada ou por outros curingas.",
-            detalhes: []
+            texto: "O limite de dinossauros por grupo está estabelecido no canal de perfis-e-limites do Discord.",
+            detalhes: [
+                "Filhotes, jovens e adolescentes não contam para o limite, apenas sub-adultos e adultos."
+            ]
         },
         {
             numero: "4",
-            texto: "Deve-se respeitar o limite de grupo estabelecido no canal: [📚│perfis-e-limites]",
-            detalhes: [
-                "Filhotes, jovens e adolescentes não contam, apenas sub-adultos e adultos."
-            ]
+            texto: "Todos os players jogando juntos devem estar no grupo formado dentro do jogo.",
+            detalhes: []
         },
         {
             numero: "5",
-            texto: "Proibido utilizar os sistemas para caçar os membros do próprio grupo, como mandar convite para saber a localização e afins.",
-            detalhes: [
-                "Caso o grupo seja desfeito ou alguém saia, os membros do antigo grupo não poderão se atacar ou perseguir por 20 minutos.",
-                "Caso alguém do grupo esteja causando problemas, poderá ser expulso após ser avisado e ameaçado 2x, e morto caso continue seguindo.",
-                "Caso o grupo de carnívoros esteja tomando DANO DE FOME, o grupo poderá se tornar canibal e atacar um membro do próprio bando para se alimentar, seja o membro em qualquer fase de crescimento"
-            ]
+            texto: "É proibido enviar convites de grupo para players que não façam parte do seu grupo ou manada.",
+            detalhes: []
+        },
+        {
+            numero: "6",
+            texto: "É proibido passar a localização de outros players no chat global, apenas no chat de grupo.",
+            detalhes: []
         }
     ],
     "regras-ninho": [
         {
             numero: "1",
-            texto: "Proibido destruir ninhos de outros dinossauros sem motivo.",
+            texto: "É proibido destruir ninhos de outros players sem motivo.",
             detalhes: [
-                "Será obrigatório quebrar ninhos que não sejam seus após o seu grupo vencer uma disputa por território.",
-                "Proibido criar ninho em Waystone/Homecaves."
+                "Motivos válidos: O ninho está bloqueando passagem, está em área de combate ativo, ou o dono do ninho atacou você."
             ]
         },
         {
             numero: "2",
-            texto: "Ninhos tem área de 20 passos(exceto na cratera, onde é apenas 10 passos), dentro dessa área, herbívoros e carnívoros podem ameaçar invasores a fim de expulsá-los de perto do local.",
+            texto: "Ninhos têm uma área de proteção de 30 passos (contados pelo dono do ninho).",
             detalhes: [
-                "É permitido desafiar proprietários de ninhos com o intuito de tomar posse da área e fazerem seus próprios ninhos. (permanência mínima de 1 hora).",
-                "Caso criem ninhos no seu território, você deverá ameaçar 2x para realizar a expulsão dos players, caso não saiam uma disputa de território deverá ser iniciada.",
-                "É proibido utilizar ninho com intuito de forçar combate.",
-                "Caso caia uma carcaça dentro da área de ninho a menos de 10 passos (do dono do ninho), não é obrigatória a finalização do combate, porém caso caia a mais de 10 passos (do dono do ninho) o combate é finalizado. Herbívoros não podem impedir carnívoros de comer uma carcaça, estando ela fora dessas condições.",
-                "O combate finaliza quando todos do grupo saem da área dos 20 passos(ou 10 passos em caso de ninho na cratera) do ninho ou após a morte de todos os membros. O grupo perdedor não poderá voltar a contestar a área por 1 hora."
+                "Dentro da cratera, ninhos possuem apenas 15 passos de proteção."
             ]
         },
         {
             numero: "3",
-            texto: "É obrigatório cuidar de seus filhotes até a fase \"sub adulta\". (não válido para filhotes adotados). Os limites de grupo devem ser respeitados.",
+            texto: "É proibido criar ninho para se curar durante ou após combates.",
             detalhes: []
         },
         {
             numero: "4",
-            texto: "Adoção será permitida das seguintes formas:",
-            detalhes: [
-                "Herbívoros: Qualquer espécie que faça parte de sua família ou que seja coringa.",
-                "Carnívoros: É permitida a adoção de espécies que façam mixpack com seu dinossauro, desde que ele não seja de um Tier maior que o seu."
-            ]
+            texto: "É proibido usar o inventário do ninho para diminuir fome/sede sem filhotes.",
+            detalhes: []
+        },
+        {
+            numero: "5",
+            texto: "Filhotes só podem ser adotados com consentimento do dono do ninho.",
+            detalhes: []
         }
     ]
 };
 
-// Função para criar elementos de regra
-function criarElementosRegra(regra) {
-    const ruleItem = document.createElement('div');
-    ruleItem.className = 'rule-item';
-    
-    const ruleText = document.createElement('div');
-    ruleText.className = 'rule-text';
-    ruleText.innerHTML = `<span class="rule-number">${regra.numero}.</span> ${regra.texto}`;
-    
-    ruleItem.appendChild(ruleText);
-    
-    if (regra.detalhes && regra.detalhes.length > 0) {
-        regra.detalhes.forEach(detalhe => {
-            const ruleDetail = document.createElement('div');
-            ruleDetail.className = 'rule-detail';
-            ruleDetail.textContent = detalhe;
-            ruleItem.appendChild(ruleDetail);
-        });
-    }
-    
-    return ruleItem;
-}
-
-// Função para preencher as abas com conteúdo
+// Função para preencher o conteúdo das abas de regras
 function preencherConteudoAbas() {
-    for (const [secaoId, regrasSecao] of Object.entries(regras)) {
-        const secaoElement = document.getElementById(secaoId);
-        if (secaoElement) {
-            const ruleContent = secaoElement.querySelector('.rule-content');
-            
-            regrasSecao.forEach(regra => {
-                const ruleItem = criarElementosRegra(regra);
-                ruleContent.appendChild(ruleItem);
-            });
-        }
+    for (const [secao, regrasSecao] of Object.entries(regras)) {
+        const conteudoDiv = document.querySelector(`#${secao} .rule-content`);
+        if (!conteudoDiv) continue;
+        
+        let html = '';
+        regrasSecao.forEach(regra => {
+            html += `<div class="rule-item">
+                <span class="rule-number">${regra.numero}.</span> ${regra.texto}
+                ${regra.detalhes.length > 0 ? '<ul class="rule-details">' : ''}
+                ${regra.detalhes.map(detalhe => `<li class="rule-detail">${detalhe}</li>`).join('')}
+                ${regra.detalhes.length > 0 ? '</ul>' : ''}
+            </div>`;
+        });
+        
+        conteudoDiv.innerHTML = html;
     }
 }
 
-// Função para configurar o menu de regras
-function configurarRegrasMenu() {
+// Função para configurar a navegação entre abas
+function configurarNavegacaoAbas() {
+    const tabItems = document.querySelectorAll('.tab-item');
+    const regrasItems = document.querySelectorAll('.regras-item');
     const regrasMenu = document.querySelector('.regras-menu');
     const regrasList = document.querySelector('.regras-list');
     
-    regrasMenu.addEventListener('click', (e) => {
-        e.preventDefault();
+    // Mostrar/esconder menu de regras
+    regrasMenu.addEventListener('click', () => {
         regrasList.classList.toggle('hidden');
     });
     
-    // Close menu when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!regrasMenu.contains(e.target) && !regrasList.contains(e.target)) {
-            regrasList.classList.add('hidden');
-        }
-    });
-}
-
-// Função para alternar entre abas
-function configurarNavegacaoAbas() {
-    const tabs = document.querySelectorAll('.tab-item');
-    const regrasItems = document.querySelectorAll('.regras-item');
-    const tabContents = document.querySelectorAll('.tab-content');
-    
-    // Handle main tab clicks
-    tabs.forEach(tab => {
-        if (tab.classList.contains('regras-menu')) return; // Skip regras-menu as it toggles menu
-        tab.addEventListener('click', () => {
-            // Remove active class from all tabs and contents
-            tabs.forEach(t => t.classList.remove('active'));
-            regrasItems.forEach(item => item.classList.remove('active'));
-            tabContents.forEach(content => content.classList.remove('active'));
-            
-            // Add active class to clicked tab
-            tab.classList.add('active');
-            
-            // Show corresponding content
-            const tabId = tab.getAttribute('data-tab');
-            document.getElementById(tabId).classList.add('active');
-            
-            // Close regras menu
-            document.querySelector('.regras-list').classList.add('hidden');
-        });
-    });
-    
-    // Handle regras item clicks
-    regrasItems.forEach(item => {
+    // Navegação entre abas principais
+    tabItems.forEach(item => {
         item.addEventListener('click', () => {
-            // Remove active class from all tabs and contents
-            tabs.forEach(t => t.classList.remove('active'));
-            regrasItems.forEach(i => i.classList.remove('active'));
-            tabContents.forEach(content => content.classList.remove('active'));
+            const tabId = item.getAttribute('data-tab');
             
-            // Add active class to regras-menu and clicked item
-            document.querySelector('.regras-menu').classList.add('active');
+            if (tabId === 'regras-menu') return;
+            
+            // Esconder menu de regras ao clicar em outra aba
+            if (tabId !== 'regras-menu') {
+                regrasList.classList.add('hidden');
+            }
+            
+            // Ativar aba clicada
+            tabItems.forEach(tab => tab.classList.remove('active'));
             item.classList.add('active');
             
-            // Show corresponding content
+            // Mostrar conteúdo da aba
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            if (tabId !== 'regras-menu') {
+                document.getElementById(tabId).classList.add('active');
+            }
+        });
+    });
+    
+    // Navegação entre itens de regras
+    regrasItems.forEach(item => {
+        item.addEventListener('click', () => {
             const tabId = item.getAttribute('data-tab');
+            
+            // Ativar item de regra clicado
+            regrasItems.forEach(regra => regra.classList.remove('active'));
+            item.classList.add('active');
+            
+            // Mostrar conteúdo da regra
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
             document.getElementById(tabId).classList.add('active');
             
-            // Close regras menu
-            document.querySelector('.regras-list').classList.add('hidden');
+            // Esconder menu de regras após selecionar
+            regrasList.classList.add('hidden');
         });
     });
 }
 
-// Sistema de perguntas e respostas
+// Função para configurar o sistema de perguntas
 function configurarSistemaPerguntas() {
     const perguntaInput = document.getElementById('pergunta-input');
     const perguntaBtn = document.getElementById('pergunta-btn');
@@ -436,68 +403,87 @@ function configurarSistemaPerguntas() {
     const respostaContent = document.getElementById('resposta-content');
     
     perguntaBtn.addEventListener('click', () => {
-        const pergunta = perguntaInput.value.trim().toLowerCase();
-        
-        if (pergunta === '') {
-            return;
-        }
+        const pergunta = perguntaInput.value.trim();
+        if (!pergunta) return;
         
         const resposta = buscarResposta(pergunta);
-        
         respostaContent.innerHTML = resposta;
         respostaContainer.classList.remove('hidden');
     });
     
-    perguntaInput.addEventListener('keypress', (e) => {
+    perguntaInput.addEventListener('keypress', e => {
         if (e.key === 'Enter') {
             perguntaBtn.click();
         }
     });
 }
 
+// Função para configurar o menu de regras
+function configurarRegrasMenu() {
+    document.addEventListener('click', e => {
+        const regrasMenu = document.querySelector('.regras-menu');
+        const regrasList = document.querySelector('.regras-list');
+        
+        // Fechar menu de regras ao clicar fora dele
+        if (!regrasMenu.contains(e.target) && !regrasList.contains(e.target)) {
+            regrasList.classList.add('hidden');
+        }
+    });
+}
+
 // Função para buscar resposta com base na pergunta
 function buscarResposta(pergunta) {
-    // Dicionário de sinônimos para melhorar a busca
+    // Sinônimos para melhorar a busca
     const sinonimos = {
-        "combate": "engage",
-        "luta": "engage",
-        "batalha": "engage",
-        "pvp": "engage",
         "cc": "carcaça",
-        "corpo": "carcaça",
         "cadaver": "carcaça",
-        "cadáver": "carcaça",
-        "kill": "carcaça",
-        "morto": "carcaça",
-        "morta": "carcaça",
-        "presa": "carcaça",
-        "atacar": "caçada",
-        "caçar": "caçada",
+        "corpo": "carcaça",
+        "abandonado": "abandonar",
+        "largar": "abandonar",
+        "deixar": "abandonar",
+        "ofender": "ofensa",
+        "xingar": "ofensa",
+        "insultar": "ofensa",
+        "anti-game": "anti-jogo",
+        "antigame": "anti-jogo",
+        "way": "waystone",
+        "pedra": "waystone",
+        "restart": "restart",
+        "reinicio": "restart",
+        "reinício": "restart",
+        "vingar": "vingança",
+        "revenge": "vingança",
+        "perseguir": "perseguição",
+        "seguir": "perseguição",
+        "stalk": "perseguição",
+        "global": "chat global",
+        "monopolizar": "monopolizar",
+        "bloquear": "monopolizar",
+        "growth": "growth",
+        "crescimento": "growth",
+        "sauropode": "saurópodes",
+        "sauropodes": "saurópodes",
+        "lago": "lagos pequenos",
+        "lagoa": "lagos pequenos",
+        "engage": "engage",
+        "combate": "combate",
+        "luta": "combate",
+        "pvp": "combate",
+        "caça": "caçada",
         "hunt": "caçada",
-        "hunting": "caçada",
-        "matar": "caçada",
-        "perseguir": "caçada",
-        "grupo": "manada",
-        "pack": "grupo",
-        "bando": "grupo",
-        "manada": "grupo",
-        "herd": "grupo",
-        "mixar": "mixpack",
-        "mix": "mixpack",
-        "misturar": "mixpack",
-        "mistura": "mixpack",
-        "voar": "voador",
-        "flyer": "voador",
-        "pássaro": "voador",
-        "passaro": "voador",
-        "ave": "voador",
-        "aéreo": "voador",
-        "aereo": "voador",
-        "nido": "ninho",
-        "nest": "ninho",
-        "filhote": "ninho",
-        "baby": "ninho",
-        "juvenil": "ninho",
+        "cercar": "cercar",
+        "cerco": "cerco",
+        "agua": "água",
+        "homecave": "homecave",
+        "cave": "homecave",
+        "caverna": "homecave",
+        "interferir": "interferir",
+        "atrapalhar": "interferir",
+        "aquatico": "aquáticos",
+        "semi": "semiaquáticos",
+        "bando": "bando",
+        "grupo": "bando",
+        "pack": "bando",
         "juve": "ninho",
         "terri": "território",
         "area": "território",
@@ -810,6 +796,20 @@ Tempo de crescimento passivo: 5 horas.`;
         'tyrannotitan': 'Tyrannotitan'
     };
 
+    // Mapeamento de nomes para arquivos de imagem
+    const imagemMap = {
+        'Tyrannosaurus Alderon': 'Rex_Alderon.png',
+        'Tyrannotitan': 'Tyranotytan.png',
+        'Livyatan': 'Livyatan.png',
+        'Tyrannosaurus PT': 'Rex_PT.png',
+        'Spinosaurus': 'Spino.png',
+        'Sachicasaurus': 'Sachica.png',
+        'Giganotosaurus': 'Giga.png',
+        'Deinosuchus': 'Deinosuchus.png',
+        'Carcharodontosaurus': 'Carcha.png',
+        'Acrocanthosaurus': 'Acro.png'
+    };
+
     perfisTexto.split("Perfil ").forEach(bloco => {
         if (!bloco.trim()) return;
         const linhas = bloco.trim().split("\n");
@@ -827,12 +827,53 @@ Tempo de crescimento passivo: 5 horas.`;
     const inputBusca = document.getElementById('busca-dino');
     const sugestoesList = document.getElementById('sugestoes-dino');
     const perfilContainer = document.getElementById('perfil-dino');
+    const dinoCardsContainer = document.getElementById('dino-cards-container');
+
+    // Criar cards para todos os dinossauros
+    function criarCards() {
+        // Ordenar nomes alfabeticamente
+        const nomesDinos = Object.keys(perfis).sort();
+        
+        dinoCardsContainer.innerHTML = '';
+        
+        nomesDinos.forEach(nome => {
+            const p = perfis[nome];
+            const imagemSrc = `images/${imagemMap[nome]}`;
+            const tier = p['TIER'] || '';
+            
+            const card = document.createElement('div');
+            card.className = 'dino-card';
+            card.innerHTML = `
+                <img src="${imagemSrc}" alt="${nome}" class="dino-card-image">
+                <div class="dino-card-info">
+                    <div class="dino-card-name">${nome}</div>
+                    <div class="dino-card-tier">TIER: ${tier}</div>
+                </div>
+            `;
+            
+            card.addEventListener('click', () => {
+                mostrarPerfil(nome);
+                inputBusca.value = nome;
+                sugestoesList.classList.add('hidden');
+                // Ocultar os cards quando um perfil é selecionado
+                dinoCardsContainer.classList.add('hidden');
+                
+                // Scroll para o perfil
+                perfilContainer.scrollIntoView({ behavior: 'smooth' });
+            });
+            
+            dinoCardsContainer.appendChild(card);
+        });
+    }
 
     inputBusca.addEventListener('input', () => {
         const valor = inputBusca.value.trim().toLowerCase();
         sugestoesList.innerHTML = '';
+        
+        // Se o campo de busca estiver vazio, mostrar os cards e esconder as sugestões
         if (!valor) {
             sugestoesList.classList.add('hidden');
+            dinoCardsContainer.classList.remove('hidden');
             perfilContainer.innerHTML = '';
             return;
         }
@@ -841,7 +882,7 @@ Tempo de crescimento passivo: 5 horas.`;
             const nomeLower = nome.toLowerCase();
             const matchesNome = nomeLower.includes(valor);
             const matchesSinonimo = Object.entries(sinonimos).some(([sin, especie]) => {
-                return sin.includes(valor) && nomeLower.includes(especie.toLowerCase());
+                return sin.toLowerCase().includes(valor) && nomeLower.includes(especie.toLowerCase());
             });
             return matchesNome || matchesSinonimo;
         });
@@ -854,6 +895,8 @@ Tempo de crescimento passivo: 5 horas.`;
                 li.addEventListener('click', () => {
                     mostrarPerfil(nome);
                     sugestoesList.classList.add('hidden');
+                    // Ocultar os cards quando um perfil é selecionado
+                    dinoCardsContainer.classList.add('hidden');
                     inputBusca.value = nome;
                 });
                 sugestoesList.appendChild(li);
@@ -870,7 +913,7 @@ Tempo de crescimento passivo: 5 horas.`;
                 const nomeLower = nome.toLowerCase();
                 const matchesNome = nomeLower.includes(valor);
                 const matchesSinonimo = Object.entries(sinonimos).some(([sin, especie]) => {
-                    return sin.includes(valor) && nomeLower.includes(especie.toLowerCase());
+                    return sin.toLowerCase().includes(valor) && nomeLower.includes(especie.toLowerCase());
                 });
                 return matchesNome || matchesSinonimo;
             });
@@ -878,6 +921,8 @@ Tempo de crescimento passivo: 5 horas.`;
             if (correspondente) {
                 mostrarPerfil(correspondente);
                 sugestoesList.classList.add('hidden');
+                // Ocultar os cards quando um perfil é selecionado
+                dinoCardsContainer.classList.add('hidden');
                 inputBusca.value = correspondente;
             }
         }
@@ -886,18 +931,101 @@ Tempo de crescimento passivo: 5 horas.`;
     function mostrarPerfil(nome) {
         const p = perfis[nome];
         if (!p) return;
+        
+        const imagemSrc = `images/${imagemMap[nome]}`;
         let tier = p['TIER'] || '';
         tier = tier.includes('6') ? '🌊'.repeat(6) : '🍖'.repeat(5);
 
+        const voltarBtn = document.getElementById('voltar-btn');
+        
         perfilContainer.innerHTML = `
-            <h3>${nome}</h3>
+            <button id="voltar-btn" class="voltar-btn">
+                <i class="fas fa-arrow-left"></i> Voltar
+            </button>
+            <div class="perfil-header">
+                <img src="${imagemSrc}" alt="${nome}" class="perfil-imagem">
+                <div class="perfil-titulo">
+                    <h3>${nome}</h3>
+                </div>
+            </div>
             <div class="perfil-box"><strong>TIER:</strong> <span class="emoji-tier">${tier}</span></div>
             <div class="perfil-box"><strong>Limite de grupo:</strong> ${p['Limite de grupo']}</div>
             <div class="perfil-box"><strong>Anda com:</strong> ${p['Anda com']}</div>
             <div class="perfil-box"><strong>Temperamento:</strong> ${p['Temperamento']}</div>
             <div class="perfil-box"><strong>Tempo de crescimento passivo:</strong> ${p['Tempo de crescimento passivo']}</div>
         `;
+
+        // Mostrar o perfil e esconder os cards
+        perfilContainer.style.display = 'flex';
+        dinoCardsContainer.style.display = 'none';
+
+        // Configurar o novo botão voltar
+        const novoVoltarBtn = document.getElementById('voltar-btn');
+        novoVoltarBtn.addEventListener('click', voltarParaCards);
+
+        // Scroll suave para o perfil
+        perfilContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
+
+    // Função para voltar para os cards
+    function voltarParaCards() {
+        // Limpar o campo de busca
+        inputBusca.value = '';
+        
+        // Esconder o perfil e mostrar os cards
+        perfilContainer.style.display = 'none';
+        dinoCardsContainer.style.display = 'grid';
+        
+        // Esconder sugestões
+        sugestoesList.classList.add('hidden');
+        
+        // Scroll suave para o topo da seção
+        document.querySelector('#perfis-dinos h2').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // Modificar o evento de input
+    inputBusca.addEventListener('input', () => {
+        const valor = inputBusca.value.trim().toLowerCase();
+        sugestoesList.innerHTML = '';
+        
+        // Se o campo de busca estiver vazio
+        if (!valor) {
+            sugestoesList.classList.add('hidden');
+            perfilContainer.style.display = 'none';
+            dinoCardsContainer.style.display = 'grid';
+            return;
+        }
+
+        const correspondentes = Object.keys(perfis).filter(nome => {
+            const nomeLower = nome.toLowerCase();
+            const matchesNome = nomeLower.includes(valor);
+            const matchesSinonimo = Object.entries(sinonimos).some(([sin, especie]) => {
+                return sin.toLowerCase().includes(valor) && nomeLower.includes(especie.toLowerCase());
+            });
+            return matchesNome || matchesSinonimo;
+        });
+
+        if (correspondentes.length > 0) {
+            sugestoesList.classList.remove('hidden');
+            correspondentes.forEach(nome => {
+                const li = document.createElement('li');
+                li.textContent = nome;
+                li.addEventListener('click', () => {
+                    mostrarPerfil(nome);
+                    sugestoesList.classList.add('hidden');
+                    // Ocultar os cards quando um perfil é selecionado
+                    dinoCardsContainer.classList.add('hidden');
+                    inputBusca.value = nome;
+                });
+                sugestoesList.appendChild(li);
+            });
+        } else {
+            sugestoesList.classList.add('hidden');
+        }
+    });
+
+    // Inicializar os cards ao carregar a página
+    criarCards();
 }
 
 // Inicializar o site
