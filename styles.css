@@ -1,0 +1,592 @@
+/* Estilos gerais */
+:root {
+    --primary-color: #8B5A2B; /* Marrom terroso */
+    --secondary-color: #4A7C59; /* Verde floresta */
+    --accent-color: #D9A566; /* Âmbar */
+    --dark-color: #2D2D2A; /* Quase preto */
+    --light-color: #F5F5DC; /* Bege claro */
+    --danger-color: #A52A2A; /* Vermelho carnívoro */
+    --herbivore-color: #228B22; /* Verde herbívoro */
+    --water-color: #4682B4; /* Azul água */
+    --flying-color: #87CEEB; /* Azul céu */
+    --territory-color: #CD853F; /* Marrom território */
+    --group-color: #9370DB; /* Púrpura grupo */
+    --nest-color: #DEB887; /* Bege ninho */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+    background-image: url('images/path_of_titans_background.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 245, 220, 0.65);
+    z-index: -1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(245, 245, 220, 0.9);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+    background: linear-gradient(to right, var(--dark-color), var(--primary-color), var(--dark-color));
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 20px;
+}
+
+.logo-container {
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    color: var(--light-color);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Jurassic Park', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.subtitle {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* Navegação */
+nav {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.tabs {
+    display: flex;
+    list-style: none;
+    background-color: var(--dark-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tab-item {
+    padding: 15px 20px;
+    cursor: pointer;
+    color: var(--light-color);
+    transition: all 0.3s ease;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.tab-item:hover {
+    background-color: var(--primary-color);
+}
+
+.tab-item.active {
+    background-color: var(--secondary-color);
+    color: white;
+    font-weight: bold;
+}
+
+.tab-item.regras-menu {
+    position: relative;
+}
+
+.tab-item i {
+    margin-left: 8px;
+}
+
+.regras-list {
+    list-style: none;
+    background-color: var(--dark-color);
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 50%;
+    z-index: 10;
+    padding: 10px 0;
+}
+
+.regras-list.hidden {
+    display: none;
+}
+
+.regras-item {
+    padding: 12px 20px;
+    color: var(--light-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.regras-item:hover {
+    background-color: var(--primary-color);
+}
+
+.regras-item.active {
+    background-color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.tab-item::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tab-item.regras-menu::before {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23F5F5DC"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>');
+}
+
+.tab-item[data-tab="pesquisa-regras"]::before {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23F5F5DC"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>');
+}
+
+/* Conteúdo das abas */
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.tab-content.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.tab-content h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--accent-color);
+    font-size: 1.8rem;
+}
+
+.rule-content {
+    font-size: 1.1rem;
+}
+
+.rule-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    border-left: 4px solid var(--secondary-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.rule-number {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.rule-detail {
+    margin-top: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.rule-detail::before {
+    content: '🔹';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+}
+
+/* Seção de perguntas */
+.pergunta-section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pergunta-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.pergunta-section p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pergunta-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#pergunta-input {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#pergunta-input:focus {
+    border-color: var(--primary-color);
+}
+
+#pergunta-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#pergunta-btn:hover {
+    background-color: var(--primary-color);
+}
+
+#resposta-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-color);
+    margin-top: 20px;
+}
+
+#resposta-container h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+#resposta-content {
+    line-height: 1.6;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border-radius: 0 0 8px 8px;
+    margin-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .tabs {
+        flex-direction: column;
+    }
+    
+    .tab-item {
+        padding: 12px;
+    }
+    
+    .regras-list {
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    .pergunta-container {
+        flex-direction: column;
+    }
+    
+    #pergunta-btn {
+        width: 100%;
+    }
+}
+
+/* Estilos específicos para cada categoria */
+#regras-gerais h2 {
+    border-bottom-color: var(--primary-color);
+}
+
+#regras-engage h2 {
+    border-bottom-color: var(--secondary-color);
+}
+
+#carnivoro-vs-carnivoro h2 {
+    border-bottom-color: var(--danger-color);
+}
+
+#carnivoro-vs-carnivoro .rule-item {
+    border-left-color: var(--danger-color);
+}
+
+#carnivoro-vs-herbivoro h2 {
+    border-bottom-color: var(--herbivore-color);
+}
+
+#carnivoro-vs-herbivoro .rule-item {
+    border-left-color: var(--herbivore-color);
+}
+
+#regras-voador h2 {
+    border-bottom-color: var(--flying-color);
+}
+
+#regras-voador .rule-item {
+    border-left-color: var(--flying-color);
+}
+
+#regras-territorio h2 {
+    border-bottom-color: var(--territory-color);
+}
+
+#regras-territorio .rule-item {
+    border-left-color: var(--territory-color);
+}
+
+#regras-grupo h2 {
+    border-bottom-color: var(--group-color);
+}
+
+#regras-grupo .rule-item {
+    border-left-color: var(--group-color);
+}
+
+#regras-ninho h2 {
+    border-bottom-color: var(--nest-color);
+}
+
+#regras-ninho .rule-item {
+    border-left-color: var(--nest-color);
+}
+
+/* Elementos decorativos */
+.dino-decoration {
+    position: absolute;
+    opacity: 0.2;
+    z-index: -1;
+    width: 150px;
+}
+
+.dino-top-right {
+    top: 20px;
+    right: 20px;
+    transform: rotate(15deg);
+}
+
+.dino-bottom-left {
+    bottom: 20px;
+    left: 20px;
+    transform: rotate(-10deg);
+}
+
+.dino-middle-right {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%) rotate(10deg);
+}
+
+.dino-middle-left {
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%) rotate(-15deg);
+}
+
+.dino-top-left {
+    top: 20px;
+    left: 20px;
+    transform: rotate(-5deg);
+}
+
+.dino-bottom-right {
+    bottom: 20px;
+    right: 20px;
+    transform: rotate(5deg);
+}
+
+/* Animações */
+@keyframes float {
+    0% { transform: translateY(0) rotate(0); }
+    50% { transform: translateY(-10px) rotate(2deg); }
+    100% { transform: translateY(0) rotate(0); }
+}
+
+.floating {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* ===== Estilos Perfis de Dinos Atualizados ===== */
+#perfis-dinos .pergunta-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    background-color: rgba(255,255,255,0.9);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#busca-dino {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 15px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#busca-dino:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.sugestoes {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 20;
+}
+
+.sugestoes li {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.sugestoes li:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+#perfil-dino {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.95);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#perfil-dino h3 {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+#perfil-dino p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+}
+
+.emoji-tier {
+    font-size: 1.3rem;
+    margin-right: 5px;
+}
+
+/* Reutiliza hidden */
+.hidden {
+    display: none;
+}
+
+
+#perfil-dino {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#perfil-dino h3 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.perfil-box {
+    background: rgba(255, 255, 255, 0.85);
+    border-left: 6px solid var(--secondary-color);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-size: 1.1rem;
+}

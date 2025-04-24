@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras Prelude Realismo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <h1>Regras Prelude Realismo</h1>
+                <div class="subtitle">Path of Titans</div>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="tabs">
+                <li class="tab-item regras-menu" data-tab="regras-menu">
+                    Regras <i class="fas fa-chevron-down"></i>
+                </li>
+                <li class="tab-item" data-tab="pesquisa-regras"><i class="fas fa-search"></i> Pesquisa de Regras</li>
+                <li class="tab-item" data-tab="perfis-dinos"><i class="fas fa-dragon"></i> Perfis de Dinos</li>
+            </ul>
+            <ul class="regras-list hidden">
+                <li class="regras-item" data-tab="regras-gerais">Regras Gerais</li>
+                <li class="regras-item" data-tab="regras-engage">Regras de Engage</li>
+                <li class="regras-item" data-tab="carnivoro-vs-carnivoro">Carnívoro vs Carnívoro</li>
+                <li class="regras-item" data-tab="carnivoro-vs-herbivoro">Carnívoro vs Herbívoro</li>
+                <li class="regras-item" data-tab="regras-voador">Regras de Voador</li>
+                <li class="regras-item" data-tab="regras-territorio">Regras de Território</li>
+                <li class="regras-item" data-tab="regras-grupo">Regras de Grupo</li>
+                <li class="regras-item" data-tab="regras-ninho">Regras de Ninho</li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id="regras-gerais" class="tab-content active"><h2>Regras Gerais</h2><div class="rule-content"></div></div>
+            <div id="regras-engage" class="tab-content"><h2>Regras de Engage</h2><div class="rule-content"></div></div>
+            <div id="carnivoro-vs-carnivoro" class="tab-content"><h2>Carnívoro vs Carnívoro</h2><div class="rule-content"></div></div>
+            <div id="carnivoro-vs-herbivoro" class="tab-content"><h2>Carnívoro vs Herbívoro</h2><div class="rule-content"></div></div>
+            <div id="regras-voador" class="tab-content"><h2>Regras de Voador</h2><div class="rule-content"></div></div>
+            <div id="regras-territorio" class="tab-content"><h2>Regras de Território</h2><div class="rule-content"></div></div>
+            <div id="regras-grupo" class="tab-content"><h2>Regras de Grupo</h2><div class="rule-content"></div></div>
+            <div id="regras-ninho" class="tab-content"><h2>Regras de Ninho</h2><div class="rule-content"></div></div>
+            <div id="pesquisa-regras" class="tab-content">
+                <h2>Pesquisa de Regras</h2>
+                <div class="rule-content">
+                    <p>Pesquise por uma regra do servidor:</p>
+                    <div class="pergunta-container">
+                        <input type="text" id="pergunta-input" placeholder="Ex: Posso atacar um herbívoro com meu grupo?">
+                        <button id="pergunta-btn">Pesquisar</button>
+                    </div>
+                    <div id="resposta-container" class="hidden">
+                        <h3>Resposta:</h3>
+                        <div id="resposta-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="perfis-dinos" class="tab-content">
+                <h2>Perfis de Dinossauros</h2>
+                <div class="pergunta-container">
+                    <input type="text" id="busca-dino" placeholder="Digite o nome do dinossauro...">
+                </div>
+                <ul id="sugestoes-dino" class="sugestoes hidden"></ul>
+                <div id="perfil-dino"></div>
+            </div>
+        </main>
+
+        <footer><p>Prelude Realismo - Path of Titans © 2025</p></footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
